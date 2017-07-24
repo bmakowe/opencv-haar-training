@@ -12,10 +12,11 @@ mkdir positive_images negative_images classifier
 ```
 docker run \
   --detach \
-  --volume positive_images:/positive_images \
-  --volume negative_images:/negative_images \
-  --volume classifier:/classifier \
-innoq/opencv-haar-training
+  --name opencv-haar-classifier-training \
+  --volume /home/bmakowe/positive_images:/positive_images  \
+  --volume /home/bmakowe/negative_images:/negative_images \
+  --volume /home/bmakowe/classifier:/classifier \
+innoq/opencv-classifier-training
 ```
 
 ## Version

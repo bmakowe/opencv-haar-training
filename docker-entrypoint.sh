@@ -3,8 +3,8 @@
 cd /home/opencv-haar-classifier-training
 
 # Index all positive and negative images
-find ./positive_images -iname "*.jpg|*.jpeg|*.png" > positives.txt
-find ./negative_images -iname "*.jpg|*.jpeg|*.png" > negatives.txt
+find ./positive_images -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" > positives.txt
+find ./negative_images -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" > negatives.txt
 
 # Create positive samples with the bin/createsamples.pl script and save them to the ./samples folder
 perl bin/createsamples.pl positives.txt negatives.txt samples 1500 \
