@@ -1,5 +1,14 @@
 # OpenCV HAAR classifier training
 
+## Description
+
+
+## Prerequisites
+```
+mkdir positive_images negative_images classifier
+```
+
+## Run
 ```
 docker run \
   --detach \
@@ -7,4 +16,7 @@ docker run \
   --volume negative_images:/negative_images \
   --volume classifier:/classifier \
 innoq/opencv-haar-training
-```O
+```
+
+## Version
+1.0
