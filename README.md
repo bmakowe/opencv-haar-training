@@ -22,8 +22,8 @@ docker run \
   --name opencv-haar-classifier-training \
   --volume <full_path_to>/positive_images:/positive_images  \
   --volume <full_path_to>/negative_images:/negative_images \
-  --volume <full_path_to>/classifier:/classifier \
-innoq/opencv-classifier-training
+  --volume <full_path_to>/classifier:/classifier \
+bmakowe/opencv-haar-training
 ```
 
 
